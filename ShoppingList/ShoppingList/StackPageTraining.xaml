@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             BackgroundColor="Pink"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingList.StackPageTraining">
+    <StackLayout  VerticalOptions="Center" HorizontalOptions="Fill">
+            
+            <StackLayout HorizontalOptions="Center" >
+                <Label FontSize="30" FontAttributes="Bold" Text="Xamarin"></Label>
+                <Label FontSize="18" Text="Witamy w aplikacji"></Label>
+            </StackLayout>
+            
+            <StackLayout HorizontalOptions="Fill" >
+                <Button Text="Przycisk i zmiana czcionki" Clicked="Button_Clicked" BackgroundColor="#1dabf0 " />
+                <Button Text="Przycisk Pop-Up" BackgroundColor="#1dabf0 " Clicked="Another_ButtonClicked" />
+                <Button Text="Formsy" BackgroundColor="#1dabf0 " Clicked="AndAnother_ButtonClicked" />
+                <Button Text="Operacje Crud" BackgroundColor="#1dabf0 " Clicked="Final_ButtonClicked" />
+            </StackLayout>
+                
+    </StackLayout>
+</ContentPage>

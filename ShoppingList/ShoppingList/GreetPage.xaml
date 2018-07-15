@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingList.GreetPage">
+
+    <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center" VerticalOptions="Center">
+        <Label
+                    Text="{Binding Value, 
+                    StringFormat='Value is {0:F2}'}" 
+                    Opacity="{Binding Value}"
+         ></Label>
+
+        <Button  Clicked="Button_Clicked" Text="Click me!"></Button>
+
+        <Slider x:Name ="slider" Maximum="50" Minimum="16" ></Slider>
+
+        <Label x:Name="quoteLabel" FontSize="{x:Binding Value}"></Label>
+    </StackLayout>
+    
+</ContentPage>

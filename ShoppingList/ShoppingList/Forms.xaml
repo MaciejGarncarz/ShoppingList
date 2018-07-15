@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingList.Forms">
+        <StackLayout>
+            <Label Text="Pokaż formsy"></Label>
+            <Switch IsToggled="False" x:Name="switch"></Switch>
+            <StackLayout IsVisible="{Binding Source={x:Reference switch}, Path = IsToggled}">
+                <Label Text="Forsmy!"></Label>
+                </StackLayout>
+            </StackLayout>
+</ContentPage>
